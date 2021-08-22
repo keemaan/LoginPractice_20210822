@@ -16,8 +16,8 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:scaleType="centerCrop"
             android:src="@drawable/logotitle_20210822" />
 
@@ -26,15 +26,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
         android:text="아이디" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="이메일 형식"
         android:inputType="textEmailAddress" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
         android:text="비밀번호" />
 
     <EditText
@@ -48,10 +54,27 @@
         android:layout_height="wrap_content"
         android:text="자동로그인" />
 
-    <Button
-        android:layout_width="0dp"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="회원가입" />
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="회원가입" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="로그인" />
+    </LinearLayout>
 
 </LinearLayout>
